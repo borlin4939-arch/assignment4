@@ -1,0 +1,37 @@
+
+.top{
+  color:white;
+  background-color: green;
+}
+.img-item{
+  width:200px;
+  height:200px;
+}
+.items{
+  margin-top: 5%;
+}
+.btn-cart{
+  background-color:black;
+}
+.h2index{
+  text-align: center;
+}
+/* cart page */
+
+.h3-title{
+  text-align: center;
+}
+.img-cart
+{
+  width:100px;
+  height:100px;
+}
+.contain1{
+  margin:  3% 50%;
+}
+#totalprice{
+  font-weight:900;
+}
+.ltp{
+  font-weight:900;
+}

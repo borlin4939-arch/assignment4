@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="css/mystyle.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="myjs.js"></script>
+</head>
+
+<body onload="cartpagedisplay()">
+
+  <section class="header">
+    
+        <div class="container"> 
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"> <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"> 
+                <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+                    <use xlink:href="#bootstrap"></use>
+                </svg> 
+                <span class="fs-4">M.TRAVEL</span> 
+            </a> 
+            <ul class="nav nav-pills"> 
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link " >Home</a>
+                </li> 
+                <li class="nav-item">
+                    <a href="flight.html" class="nav-link active" aria-current="page">Flight</a>
+                </li> 
+                <li class="nav-item">
+                    <a href="hotel.html" class="nav-link" >Hotel</a>
+                </li> 
+                <li class="nav-item">
+                    <a href="foods.html" class="nav-link">Foods</a>
+                </li> 
+                <li class="nav-item">
+                    <a href="ticket.html" class="nav-link">Ticket</a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link cart" href="carttest.html">cart <span id="cartdisplay">0</span></a> 
+                </li>
+          </ul>
+            </ul> 
+            <div class="text-end"> 
+                <button type="button" class="btn btn-outline-primary me-2"><a href="login.html" id="btnnoline">Login</a></button>
+                 <button type="button" class="btn btn-warning" ><a href="" id="btnnoline">Sign-up</a></button>
+            </div>
+        </header> 
+    </div>
+
+</section>
+
+  <div class="container-fluid contain1">
+  <section class="cart-list">
+    <div class="cart-title">
+      <hr>
+      <h3 class="h3-title">Item in the Cart</h3>
+      <hr>
+    </div>
+    <!-- to show column heading -->
+    <div class="row container-fluid cart-label">
+      <div class="col-3">
+        <h4>Item</h4>
+      </div>
+      <div class="col-3">
+        <h4>Item Tag</h4>
+      </div>
+      <div class="col-3">
+        <h4>Price</h4>
+      </div>
+      <div class="col-3">
+        <h4>Remove</h4>
+      </div>
+      <hr>
+    </div>
+    <!-- to show item in the cart from local storage -->
+    <div class="row container-fluid product-container">
+
+    </div>
+    <!-- to show total price and button -->
+    <div class="row container-fluid">
+      <div class="col-3">
+      </div>
+      <div class="col-3">
+      </div>
+      <div class="col-3">
+        <p class="ltp">Total Price RM<span id="totalprice"></span></p>
+      </div>
+      <div class="col-3">
+        <!-- <button class="btn btn-primary delbtn"type="button" name="button" onclick="removeitem()" >Delete</button> -->
+        <a class="btn btn-primary " href="" onclick="removeitem()" id="delbtn" style="">Delete</a>
+      </div>
+
+      <div class="row container-fluid product-container">
+        <div class="col-3">
+        </div>
+        <div class="col-3">
+        </div>
+        <div class="col-3">
+
+        </div>
+        <div class="col-3">
+          <!-- <button class="placebtn"type="button" name="button"><a href="register.html"></a>Place Order</button> -->
+          <a href="register.html" class= "btn btn-primary" id="plobtn" style=""> Place Order</a>
+        </div>
+
+    </div>
+  </section>
+  </div>
+
+  
+</body>
+
+</html>
